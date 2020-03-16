@@ -9,9 +9,9 @@
 
 % modern themes
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{orange}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
@@ -22,12 +22,12 @@
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
-\usepackage{import}
+% \usepackage{import}
 \usepackage{color}
 \usepackage{geometry}
 % personal data
 \name{Pierre}{Avital}
-\title{}                               % optional, remove / comment the line if not wanted
+% \title{Chercheur en Traitement de Signal}                               % optional, remove / comment the line if not wanted
 \address{1bis rue Jean Mermoz}{78500}{Sartrouville}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{+33630824860}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
@@ -50,17 +50,17 @@
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
-\geometry{bottom=1cm,top=2.5cm}
+\geometry{bottom=1.5cm,top=2.5cm}
 \begin{document}
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
-\begin{picture}(0,0)
-\put(385,0){\includegraphics[scale=0.08]{DSC_0296.JPG}}
-\end{picture}
-\put(140,-11){\color{gray}Double nationalité : Français - Suisse}
+% \begin{picture}(0,0)
+% % \put(385,0){\includegraphics[scale=0.08]{DSC_0296.JPG}}
+% \end{picture}
+% \put(140,-11){\color{gray}Double nationalité : Français - Suisse}
 \makecvtitle
 
-\small{Double diplômé \textbf{Ingénieur Technologies Mobiles et Systèmes Embarqués} / \textbf{Master Sécurité des Systèmes d'Information} en Septembre de cette année, je suis à la recherche d'un emploi à partir d'Octobre. Je souhaiterais particulièrement mettre mes compétences variées au service de la recherche.}
+Doctorant en Traitement du Signal, avec une expérience sur les signaux radio.
 
 \section{Expérience}
 
@@ -68,9 +68,17 @@
 
 \begin{itemize}
 
-\item{\cventry{Novembre 2017 - Mars 2018}{Ingénieur recherche et développement}{Valeo}{Créteil}{}{\vspace{3pt}TODO:DESCRIPTION DU POSTE}}
+    \item{\cventry{Juin 2018 -- Aujourd'hui}{Doctorat en Traitement du Signal}{CentraleSupélec (L2S) - Valeo}{Gif-sur-Yvette - Créteil}{}{\vspace{3pt}
+    Dans le cadre du projet où j'étais ingénieur à mon poste précédent, je réalise actuellement une thèse en partenariat avec le L2S de CentraleSupélec.\\
+    \underline{Intitulé:} Nouvelles stratégies de localisation dans un environnement de propagation complexe.\\
+    \underline{Encadrants:} José Picheral, Gilles Chardon
+    }}
+    
+    \vspace{6pt}
 
-\vspace{6pt}
+    \item{\cventry{Novembre 2017 -- Juin 2018}{Ingénieur recherche et développement}{Valeo}{Créteil}{}{\vspace{3pt}Dans le cadre d'un projet d'ouverture passive de véhicule, j'ai travaillé sur la localisation non-coopérative à courte portée d'un smartphone en environement de propagation complexe. Les contraintes principales du projet étant l'universalité et la consommation électrique, Bluetooth LE avait été choisi comme technologie de support.\\Mon rôle se divisait en deux composantes: d'un coté, l'étude des méthodes de localisation en elles-même, à travers des algorithmes tels que MUSIC et ESPRIT ; de l'autre, le développement d'une grande part des logiciels utiliséss dans le cadre du projet, notamment pour assurer la communication entre les divers composants. }}
+    
+    \vspace{6pt}
 
 \item{\cventry{Février 2017 -- Aout 2017}{Stage de fin d'études : sécurité des véhicules connectés}{Pôle Judiciaire de la Gendarmerie Nationale}{Pontoise}{}{\vspace{3pt}Partant de l'étude de la sécurité d'applications Android, j'ai développé un plugin d'intégration pour Atom nommé SmalIntegrate basé sur des outils open-source transformant cet éditeur de texte en IDE spécialisé pour le reverse d'applications Android.\\J'ai également développé une preuve de concept d'écoute de la bande ISM 2.4GHz à l'aide d'une SDR et de recherche de signaux Bluetooth sans information préalable dans le signal obtenu.\\\textit{Technologies : Atom, ADB, JDB, GNU Radio, Quartus Prime, FPGA, Gateware, Firmware, DSP, Sans-fil\\Langages : Assembleur (Dalvik), JavaScript, Bash, Python, VHDL}}}
 
@@ -82,13 +90,17 @@
 
 \section{Parcours scolaire}
 
-\vspace{5pt}
-
-\subsection{Parcours universitaire}
 
 \vspace{5pt}
 
 \begin{itemize}
+
+    \item{\cventry{Juin 2018 -- Aujourd'hui}{Doctorat en Traitement du Signal}{CentraleSupélec (L2S) - Valeo}{Gif-sur-Yvette - Créteil}{}{\vspace{3pt}
+    \underline{Intitulé:} Nouvelles stratégies de localisation dans un environnement de propagation complexe.\\
+    \underline{Encadrants:} José Picheral, Gilles Chardon.
+    }}
+    
+    \vspace{6pt}
 
 \item{\cventry{2011--2017}{Ingénieur Technologies Mobiles Systèmes Embarqués / Master Sécurité des SI}{Université de Technologie de Troyes}{Troyes}{}{Obtenant lors du Tronc Commun une solide formation en Mathématiques, Physique, Électronique et Chimie, je me suis distingué au cours de mon cursus ingénieur par mon intérêt particulier pour le bas niveau et le traitement de signal. J'ai complété ma formation d'un master SSI où j'ai excellé en cryptographie.}}
 
@@ -96,36 +108,24 @@
 
 \vspace{2pt}
 
-\subsection{Projets principaux}
-
-\vspace{5pt}
-
-\begin{itemize}
-
-\item{TX - Vision embarquée sur carte Zynq}
-
-\vspace{3pt}
-
-\small{Le but de ce projet était l'étude des capacités de la carte Zynq, hybride contenant un processeur ARM ainsi qu'un circuit logique programmable (FPGA), particulièrement dans le domaine de l'accélération matérielle pour le traitement d'images.}
-
-\vspace{6pt}
-
-\item{FSG002 - Fox Music Analysis Library}
-
-\vspace{3pt}
-
-\small{Codée en C\#, cette bibliothèque d'analyse musicale avait pour but originel l'analyse en temps réel de musiques pour permettre l'intégration de celles-ci à des mécaniques de jeu. Plus tard, son but a évolué en la création d'un support de retranscription automatique de musiques en partitions ou fichiers MIDI.}
-
-\vspace{6pt}
-
-\item{Danish!}
-
-\vspace{3pt}
-
-\small{Une implémentation en Java du jeu de bataille norvégienne. Suivant le patron de conception MVC, et ayant eu un cycle de développement en cascade.}
-
-\end{itemize}
+% \end{itemize}
 \newpage
+\section{Publications}
+\subsection{Publications académiques}
+\begin{itemize}
+    \item Avital P., Picheral J., Chardon G. (2020). \emph{Optimization of Switched Sampling for Difference of Times of Arrival Estimation}, en cours de revue.
+\end{itemize}
+\subsection{Développement open-source}
+\begin{itemize}
+    \item \textbf{no-deadlocks}, une bibliothèque Rust de débogage de deadlocks basée sur l'analyse de graphes.
+    \item \textbf{secded-rs}, une bibliothèque Rust d'encodage correcteur en code de Hamming avec parité.
+    \item \textbf{tokio-simplified}, une bibliothèque Rust avec des API plus intuitives facilitant l'utilisation de Tokio, une bibliothèque de programmation asynchrone populaire, pour les débutants.
+    \item \textbf{future-promises}, une bibliothèque Rust émulant les promesses JavaScript, et fournissant un système de variables surveillées, basés sur la bibliothèque Tokio.
+    \item \textbf{vecmap}, une bibliothèque Rust émulant l'API d'une HashMap, basée sur un vecteur, pour améliorer les performances pour les Map contenant peu d'éléments.
+    \item \textbf{cpp-mutex-guard}, une bibliothèque C++ fournissant des smart-pointer pour une gestion orientée RAII des Mutex.
+    \item Contributions occasionelles à divers projets open-source (rust-analyzer, rls-vscode, nalgebra...)
+\end{itemize}
+
 \section{Compétences}
 
 \vspace{6pt}
@@ -137,13 +137,13 @@
 \item Français : Langue natale
 \item Anglais : Courant, avec une connaissance approfondie du langage technique et scientifique. BULATS C1 (2012), Erasmus C2 (2016), 9 mois cumulés en pays anglo-saxons, dont 6 en stage à Reading, UK.
 \item Allemand : Niveau scolaire. B1/B2. 1 mois cumulé en pays germanophones.
-\item Japonais : Capacité à converser. 3 semaines passées en voyage personnel en 2014.
+\item Japonais : Capacité à converser. Voyages personnels de 3 semaines chacun en 2014 et 2017.
 \end{itemize}
 
 \vspace{6pt}
 
-\item \textbf{Programmation (usage fréquent) :} C/C++, C\#, Java, MATLAB, Python, Javascript.
-\item \textbf{Programmation (Occasionnel) :} Bash, Smali, VHDL, HTML, CSS, Prolog, CLIPS...
+\item \textbf{Programmation (usage fréquent) :} Rust, C/C++, Python, JavaScript.
+\item \textbf{Programmation (Occasionnel) :} Bash, HTML, CSS, C\#, Java, MATLAB, Smali, VHDL...
 
 \vspace{6pt}
 
@@ -162,7 +162,7 @@
 \begin{itemize}
 \item \textbf{Electronique} : Traitement de signal analogique et numérique. Interface entre microprocesseur et capteurs ou électronique de puissance.
 \item \textbf{Traitement de Signal} : Traitement d'images, stéganographie. Traitement et analyse de son, bases en psycho-acoustique.
-\item \textbf{Reverse Engineering} : Compétences développées lors du développement d'un plugin d'aide au RE.
+\item \textbf{Reverse Engineering} : Compétences développées lors du développement d'un plugin d'aide au RE logiciel.
 \item \textbf{Sans-Fil} : Théories de l'information et des communications. Compétences en radio-logicielle.
 \end{itemize}
 
@@ -171,7 +171,7 @@
 \item \textbf{Hobbies}
 \begin{itemize}
 \item \textbf{Musique} : Pratique de la guitare, originellement formé au violon et au solfège.
-\item \textbf{Informatique} : Développement de programmes à usage personnel. Personnalisation "avancée" de ma configuration.
+\item \textbf{Informatique} : Développement de programmes open-source et à usage personnel. Personnalisation "avancée" de ma configuration.
 \end{itemize}
 \end{itemize}
 
